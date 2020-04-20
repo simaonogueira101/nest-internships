@@ -1,0 +1,35 @@
+/*
+--------------------------------------------------------------------------------
+FONTS
+--------------------------------------------------------------------------------
+*/
+
+$font-family-sans-serif-reg: 'Monument-Regular', sans-serif;
+$font-family-sans-serif-ultra: 'Monument-Ultra', sans-serif;
+$font-family-serif: 'Harbour', serif;
+
+
+$font-size-baseline: 1.6rem; /* 16px */
+$font-size-sm: $font-size-baseline * 0.75; /* 12px */
+
+$h1-font-size: $font-size-baseline * 3.125; /* 50px */
+$h2-font-size: $font-size-baseline * 2.875; /* 46px */
+$h3-font-size: $font-size-baseline * 2.375; /* 86px */
+$h4-font-size: $font-size-baseline * 2.25; /* 36px */
+$h5-font-size: $font-size-baseline * 1.5; /* 24px */
+$h6-font-size: $font-size-baseline * 0.875; /* 14px */
+$btn-font-size: $font-size-baseline * 1.125; /* 18px */
+
+
+//----- NAVBAR -----//
+
+$navbar-height: 9rem;
+
+
+/*
+--------------------------------------------------------------------------------
+VARIABLES
+--------------------------------------------------------------------------------
+*/
+
+$light-border: 1px solid $gray-2;
