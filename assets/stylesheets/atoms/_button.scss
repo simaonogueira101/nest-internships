@@ -1,0 +1,39 @@
+.button {
+  @include transition(all, .5);
+  border-radius: 1px;
+  min-width: 14rem;
+  height: 5rem;
+  padding: 1.4rem 1.8rem;
+  text-transform: uppercase;
+  float: left;
+  text-align: center;
+
+  @include tablet {
+    min-width: 16rem;
+  }
+
+  &.button-icon {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 2rem;
+      height: 100%;
+    }
+  }
+
+  &:hover {
+    &.dark {
+      background-color: darken( $dark, 7% );
+    }
+
+    &.light {
+      background-color: darken( $white, 7% );
+    }
+  }
+
+  &.light {
+    background-color: $white;
+    color: $dark;
+  }
+}
