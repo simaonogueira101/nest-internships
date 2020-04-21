@@ -20,3 +20,13 @@ $grid-breakpoints: (
                 grid-template-columns: repeat(3, 1fr);
         }
 }
+
+.policies-grid {
+        display: grid;
+	grid-template-columns: 1fr;
+        grid-gap: 2rem;
+
+        @include tablet {
+                grid-template-columns: 1fr max-content 1fr;
+        }
+}
