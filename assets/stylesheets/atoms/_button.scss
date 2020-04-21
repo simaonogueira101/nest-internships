@@ -1,12 +1,53 @@
-.button, .btn-link {
-  @include transition(all, .5);
+a {
+  cursor: pointer;
+  @include transition(all, 0.3);
+  letter-spacing: 0.08em;
+  color: $gray-3;
+
+  .smaller-link {
+    font-size: 1.5rem;
+    @include tablet {
+      font-size: $font-size-baseline;
+    }
+  }
+}
+
+.button,
+.btn-link {
+  @include transition(all, 0.5);
+  font-family: $font-family-sans-serif-ultra;
   min-width: 14rem;
-  padding: 2.4rem 2rem;
+  padding: 2.4rem 2.4rem;
   float: left;
   text-align: center;
   background-color: transparent;
   color: $gray-3;
   border-bottom: $light-border;
+  position: relative;
+
+  &:hover {
+    color: $purple;
+    transition: 0.6s transform cubic-bezier(0.19, 1, 0.22, 1);
+
+    &:after {
+      transform: scaleY(1);
+      transform-origin: bottom;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    z-index: -1;
+    width: 101%;
+    height: 102%;
+    transform: scaleY(0);
+    transition: 0.6s transform cubic-bezier(0.19, 1, 0.22, 1);
+    transform-origin: top left;
+    background-color: $gray-3;
+  }
 
   @include tablet {
     min-width: 16rem;
@@ -20,10 +61,5 @@
       margin-right: 2rem;
       height: 100%;
     }
-  }
-
-  &:hover {
-    background-color: $gray-3;
-    color: $purple;
   }
 }
