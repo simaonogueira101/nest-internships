@@ -1,0 +1,16 @@
+.fullscreen-wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+.section-o-wrapper {
+  padding: 0 2rem;
+
+  @include tablet {
+    padding: 0 14rem;
+  }
+
+  @include resolution(1600px) {
+    padding: 0 18rem;
+  }
+}
