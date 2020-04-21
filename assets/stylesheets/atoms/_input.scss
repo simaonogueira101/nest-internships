@@ -2,23 +2,3 @@ label {
     padding-bottom: 1rem;
     display: inline-block;
 }
-
-.field-input {
-    display: inline-block;
-    height: 4.6rem;
-    margin: 0;
-    padding: 0 1.6rem;
-    width: 100%;
-    color: $dark;
-    border: 1px solid $gray-3;
-
-    &.light {
-        color: $white;
-        border: 1px solid $gray-3;
-    }
-
-    &.error {
-        color: $red;
-        border: 1px solid $red;
-    }
-}

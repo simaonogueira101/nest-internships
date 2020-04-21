@@ -1,0 +1,21 @@
+header {
+    @extend .section-o-wrapper;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 5rem;
+    width: 100%;
+
+    @include tablet {
+        padding-top: 12rem;
+    }
+
+    .logo {
+        @extend .img-center;
+        width: 80%;
+
+        @include tablet {
+            width: auto;
+        }
+    }
+}

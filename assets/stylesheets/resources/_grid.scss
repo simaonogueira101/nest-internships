@@ -10,3 +10,13 @@ $grid-breakpoints: (
         lg: 992px,
         xl: 1200px
 ) !default;
+
+.links-grid {
+        display: grid;
+	grid-template-columns: 1fr;
+        grid-gap: 2rem;
+
+        @include tablet {
+                grid-template-columns: repeat(3, 1fr);
+        }
+}

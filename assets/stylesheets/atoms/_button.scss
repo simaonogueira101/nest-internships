@@ -1,12 +1,12 @@
-.button {
+.button, .btn-link {
   @include transition(all, .5);
-  border-radius: 1px;
   min-width: 14rem;
-  height: 5rem;
-  padding: 1.4rem 1.8rem;
-  text-transform: uppercase;
+  padding: 2.4rem 2rem;
   float: left;
   text-align: center;
+  background-color: transparent;
+  color: $gray-3;
+  border-bottom: $light-border;
 
   @include tablet {
     min-width: 16rem;
@@ -23,17 +23,7 @@
   }
 
   &:hover {
-    &.dark {
-      background-color: darken( $dark, 7% );
-    }
-
-    &.light {
-      background-color: darken( $white, 7% );
-    }
-  }
-
-  &.light {
-    background-color: $white;
-    color: $dark;
+    background-color: $gray-3;
+    color: $purple;
   }
 }

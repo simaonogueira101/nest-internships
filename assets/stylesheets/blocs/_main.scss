@@ -1,8 +1,39 @@
-main, section {
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background-mixed.jpg');
+    background-repeat: no-repeat;
+    background-position: top; 
+    background-size: cover;
+}
+
+main,
+section {
     position: relative;
 }
 
-body {
-    background: linear-gradient(180deg, #3D00FE 0%, #6846FF 83.33%);
-    //opacity: 0.8;
+img {
+    &.bg-texture {
+        @include position(absolute, 0, 0);
+        height: 100%;
+        width: 100%;
+        object-position: 50% 50%;
+        object-fit: cover;
+        z-index: -5;
+    }
+
+    &.fixed-sun {
+        @include position(fixed, 50%, null, null, -26%);
+        transform: translateY(-50%);
+        width: 150%;
+
+        @include tablet {
+            right: -50%;
+            width: auto;
+        }
+
+        @include desktop {
+            right: -20%;
+        }
+    }
 }

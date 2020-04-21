@@ -1,0 +1,46 @@
+$animation-speed: 20s;
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-58rem * 4));
+    }
+}
+
+.infinite-slider {
+    border-top: $light-border;
+    border-bottom: $light-border;
+    margin: auto;
+    width: 100vw;
+    position: relative;
+    padding: .5rem 0;
+    overflow: hidden;
+
+    .slide-track {
+        animation: scroll $animation-speed linear infinite;
+        display: flex;
+
+        a {
+            display: inherit;
+        }
+    }
+
+    .slide {
+        h5 {
+            height: auto;
+            width: 58rem;
+        }
+    }
+}
+
+.dot {
+    filter: blur(2px);
+    background: $gray-3;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 1.5rem;
+}

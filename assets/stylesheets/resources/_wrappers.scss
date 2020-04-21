@@ -4,17 +4,13 @@
 }
 
 .section-o-wrapper {
-  @extend .fullscreen-wrapper;
-  padding: 14rem 0;
-}
+  padding: 0 2rem;
 
-img {
-  &.bg-texture{
-    @include position(absolute, 0, 0);
-    height: 100%;
-    width: 100%;
-    object-position: 50% 50%;
-    object-fit: cover;
-    z-index: -1;
+  @include tablet {
+    padding: 0 14rem;
+  }
+
+  @include resolution(1600px) {
+    padding: 0 18rem;
   }
 }

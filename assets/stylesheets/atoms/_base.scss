@@ -8,13 +8,19 @@ body {
   font-family: $font-family-sans-serif-reg;
   color: $gray-3;
   font-size: $font-size-baseline;
-  letter-spacing: .02em;
-  line-height: 150%;
+  letter-spacing: 0.04em;
+  line-height: 160%;
   overflow-x: hidden !important;
+  font-style: normal;
+  font-weight: normal;
 }
 
-
-h1, h3, h4, h6, label, button, a {
+h1,
+h3,
+h5,
+label,
+button,
+a {
   text-transform: uppercase;
 }
 
@@ -27,7 +33,11 @@ h1 {
 h2 {
   letter-spacing: 0.05em;
   line-height: 140%;
-  font-size: $h2-font-size;
+  font-size: 2.4rem;
+
+  @include tablet {
+    font-size: $h2-font-size;
+  }
 }
 
 h3 {
@@ -36,21 +46,34 @@ h3 {
   font-size: $h3-font-size;
 }
 
+h5 {
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  font-size: $h5-font-size;
+}
+
 p {
-  line-height: 150%;
   letter-spacing: 0.02em;
-  font-size: $font-size-baseline;
+  font-size: 1.4rem;
+
+  @include tablet {
+    font-size: $font-size-baseline;
+  }
 }
 
 span {
   display: inline-block;
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
-  font-size: $btn-font-size-sm;
+  @include transition(all, 0.3);
   letter-spacing: 0.06em;
-  @include transition(all, .5);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: $gray-3;
 
   @include tablet {
     font-size: $btn-font-size;
@@ -60,13 +83,13 @@ a, button {
 a {
   text-decoration: none;
 
-  &:active {
+  &:active, &:visited, &:focus {
     color: $gray-3;
   }
 }
 
-label, .label {
-  font-size: $h6-font-size-sm;
+label,
+.label {
   line-height: 100%;
   letter-spacing: 0.2em;
 
