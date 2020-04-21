@@ -66,20 +66,6 @@ span {
   display: inline-block;
 }
 
-a,
-button {
-  cursor: pointer;
-  @include transition(all, 0.3);
-  letter-spacing: 0.06em;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  color: $gray-3;
-
-  @include tablet {
-    font-size: $btn-font-size;
-  }
-}
-
 a {
   text-decoration: none;
 
