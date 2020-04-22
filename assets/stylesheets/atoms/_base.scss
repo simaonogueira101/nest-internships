@@ -25,9 +25,14 @@ a {
 }
 
 h1 {
-  letter-spacing: 0.08em;
+  font-family: $font-family-serif;
   line-height: 140%;
-  font-size: $h1-font-size;
+  letter-spacing: 0.08em;
+  font-size: $h1-font-size-sm;
+
+  @include tablet {
+    font-size: $h1-font-size;
+  }
 }
 
 h2 {
@@ -41,9 +46,14 @@ h2 {
 }
 
 h3 {
-  letter-spacing: 0.02em;
-  line-height: 100%;
-  font-size: $h3-font-size;
+  font-family: $font-family-serif;
+  line-height: 140%;
+  letter-spacing: 0.08em;
+  font-size: $h3-font-size-sm;
+
+  @include tablet {
+    font-size: $h3-font-size;
+  }
 }
 
 h5 {
@@ -54,7 +64,7 @@ h5 {
 }
 
 p {
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   font-size: 1.4rem;
 
   @include tablet {
