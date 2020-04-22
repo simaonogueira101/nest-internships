@@ -6,11 +6,9 @@
     @include tablet {
         margin-top: 35vh;
     }
+}
 
-    .form-details {
-        a {
-            text-decoration: underline;
-            text-underline-position: under;
-        }
-    }
+a.underlined {
+    text-decoration: underline;
+    text-underline-position: under;
 }
