@@ -5,6 +5,10 @@ body {
     background-repeat: no-repeat;
     background-position: top; 
     background-size: cover;
+
+    &#index {
+        background-image: url('../images/background-mixed-short.jpg');
+    }
 }
 
 main,
