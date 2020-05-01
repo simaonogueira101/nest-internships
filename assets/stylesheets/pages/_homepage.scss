@@ -1,42 +1,4 @@
 .homepage {
-    &-wrapper {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 6rem 0;
-        margin-top: 30vh;
-        height: 70vh;
-
-        @include tablet {
-           margin-top: 40vh;
-            height: 60vh;
-        }
-
-        .scroll-down {
-            @include position(absolute, null, 0, 1rem, null);
-            width: 100%;
-            padding: 0 2rem;
-            z-index: -3;
-
-            @include tablet {
-                padding: 0 4rem;
-            }
-
-            .scroll-arrow {
-                display: inline;
-                width: 25%;
-
-                @include tablet {
-                    width: auto;
-                }
-
-                &:last-child {
-                    float: right;
-                }
-            }
-        }
-    }
-
     &-title {
         width: 100%;
         margin-bottom: 4rem;
@@ -51,6 +13,7 @@
         }
     }
 }
+
 
 .form-wrapper {
     padding-top: 10rem;

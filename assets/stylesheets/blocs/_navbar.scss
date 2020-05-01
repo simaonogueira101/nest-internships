@@ -5,9 +5,11 @@ header {
     top: 0;
     padding-top: 5rem;
     width: 100%;
+    height: $navbar-height-sm;
 
     @include tablet {
-        padding-top: 10rem;
+        padding-top: 9rem;
+        height: $navbar-height;
     }
 
     .logo-link {

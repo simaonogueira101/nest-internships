@@ -1,16 +1,17 @@
 .aside-page {
     &-wrapper {
-        margin-top: 40vh;
+        margin-top: $navbar-height-sm;
         margin-bottom: 10rem;
         height: 100%;
 
         @include tablet {
-            margin-top: 45vh;
+            margin-top: $navbar-height;
         }
     }
 
     &-title {
         margin-bottom: 20rem;
+        padding-top: 20rem;
     }
 
     &-block {

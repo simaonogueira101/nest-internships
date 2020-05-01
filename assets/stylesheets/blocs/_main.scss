@@ -47,7 +47,7 @@ svg {
         opacity: 0.2;
         position: absolute;
         z-index: -1;
-        top: -35%;
+        top: 18%;
 
         text {
             fill: none;
@@ -72,6 +72,26 @@ svg {
             text {
                 transform: translateX(-42%);
             }
+        }
+    }
+}
+
+
+.scroll-down {
+    @include position(absolute, null, 0, 1rem, null);
+    width: 100%;
+    padding: 0 2rem;
+    z-index: -3;
+
+    @include tablet {
+        padding: 0 4rem;
+    }
+
+    .scroll-arrow {
+        display: inline;
+
+        &:last-child {
+            float: right;
         }
     }
 }
