@@ -18,3 +18,17 @@
     padding: 0 18rem;
   }
 }
+
+.first-cp-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: $navbar-height-sm;
+  height:calc(100vh - 10rem);
+
+  @include tablet {
+      margin-top: $navbar-height;
+      height: calc(100vh - 18rem);
+  }
+}
