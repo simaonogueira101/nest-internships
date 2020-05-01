@@ -1,9 +1,9 @@
 body {
     width: 100%;
     height: 100%;
-    background-image: url('../images/background-mixed.jpg');
+    background-image: url("../images/background-mixed.jpg");
     background-repeat: no-repeat;
-    background-position: top; 
+    background-position: top;
     background-size: cover;
 }
 
@@ -29,11 +29,49 @@ img {
 
         @include tablet {
             right: -50%;
-            width: auto;
+            width: 50%;
         }
 
         @include desktop {
             right: -20%;
+        }
+    }
+}
+
+svg {
+    &.large-header {
+        font: 17rem $font-family-serif;
+        width: 100%;
+        text-align: center;
+        height: 45rem;
+        opacity: 0.2;
+        position: absolute;
+        z-index: -1;
+        top: -35%;
+
+        text {
+            fill: none;
+            stroke: $gray-3;
+            stroke-width: 1px;
+            stroke-linejoin: round;
+        }
+
+        &.nestatini {
+            text {
+                transform: translateX(-60%);
+            }
+        }
+
+        &.indago {
+            text {
+                transform: translateX(-40%);
+            }
+        }
+
+        &.indago {
+            text {
+                transform: translateX(-42%);
+            }
         }
     }
 }

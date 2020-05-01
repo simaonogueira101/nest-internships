@@ -7,7 +7,11 @@ header {
     width: 100%;
 
     @include tablet {
-        padding-top: 12rem;
+        padding-top: 10rem;
+    }
+
+    .logo-link {
+        display: block;
     }
 
     .logo {
@@ -15,7 +19,7 @@ header {
         width: 80%;
 
         @include tablet {
-            width: auto;
+            width: 34rem;
         }
     }
 }
