@@ -65,7 +65,8 @@ h5 {
 }
 
 p {
-  letter-spacing: 0.04em;
+  line-height: 170%;
+  letter-spacing: 0.05em;
   font-size: 1.4rem;
 
   @include tablet {
