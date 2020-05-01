@@ -19,9 +19,8 @@
         padding-bottom: 1.5rem;
 
         @include tablet {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-
+            padding-top: 3rem;
+            padding-bottom: 3rem;
         }
 
         &:hover {
@@ -35,6 +34,15 @@
 
             .details-wheel {
                 opacity: 1;
+            }
+        }
+
+        .right-text {
+            padding-left: 0;
+
+            @include tablet {
+            padding-left: 4rem;
+                
             }
         }
 
