@@ -28,11 +28,11 @@ img {
         width: 150%;
 
         @include tablet {
-            right: -50%;
-            width: 50%;
+            right: -80%;
         }
 
         @include desktop {
+            width: 50%;
             right: -20%;
         }
     }
