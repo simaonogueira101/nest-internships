@@ -1,35 +1,36 @@
 .project-page {
-    &-wrapper {
+    &-header {
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin: 6rem 0;
-        margin-top: 25vh;
-        height: 35vh;
+        margin-top: $navbar-height-sm;
+        height:calc(100vh - 10rem);
 
         @include tablet {
-           margin-top: 40vh;
-        }
-    }
-}
-
-.project-page-header {
-    .project-info {
-        margin-top: 8rem;
-
-        .project-year {
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
+            margin-top: $navbar-height;
+            height: calc(100vh - 18rem);
         }
 
-        .project-year, .project-name {
-            text-align: center;
+        .project-info {
+            margin-top: 30vh;
+
+            .project-year {
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+            }
+
+            .project-year,
+            .project-name {
+                text-align: center;
+            }
         }
     }
 }
 
 .project-preset {
     &-wrapper {
+        margin-top: -20vh;
+
         .project-image-wrapper {
             img {
                 width: 100%;
@@ -55,7 +56,6 @@
         text-transform: uppercase;
     }
 }
-
 
 .project-phase {
     &-article {
@@ -101,7 +101,6 @@
     }
 }
 
-
 .project-team {
     &-wrapper {
         margin-bottom: 18rem;
@@ -132,7 +131,7 @@
     .next-project-link {
         display: block;
 
-        &:hover .next-arrow{
+        &:hover .next-arrow {
             right: 4rem;
         }
 
@@ -142,7 +141,7 @@
     }
 
     .next-project-title {
-        @include transition(all, .5);
+        @include transition(all, 0.5);
         color: $purple;
         font-size: 2rem;
         padding: 2rem 0;
@@ -154,11 +153,11 @@
     }
 
     .next-arrow {
-        @include transition(all, .5);
+        @include transition(all, 0.5);
         position: absolute;
         right: 1rem;
         top: 50%;
-        transform: scale(.5) translateY(-50%);
+        transform: scale(0.5) translateY(-50%);
 
         @include tablet {
             right: 5rem;

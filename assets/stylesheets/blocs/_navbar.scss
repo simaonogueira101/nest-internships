@@ -5,9 +5,11 @@ header {
     top: 0;
     padding-top: 5rem;
     width: 100%;
+    height: $navbar-height-sm;
 
     @include tablet {
-        padding-top: 10rem;
+        padding-top: 9rem;
+        height: $navbar-height;
     }
 
     .logo-link {
@@ -21,5 +23,26 @@ header {
         @include tablet {
             width: 34rem;
         }
+    }
+
+    &.header-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .btn-link {
+            z-index: 1;
+        }
+    }
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    font-family: $font-family-sans-serif-ultra;
+    width: 18rem;
+    
+    img {
+        margin-right: 2rem;
     }
 }
