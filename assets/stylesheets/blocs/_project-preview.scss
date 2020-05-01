@@ -1,0 +1,114 @@
+.project-preview {
+    &-wrapper {
+        margin-top: 4rem;
+        margin-bottom: 10rem;
+    }
+
+    &-link {
+        border-top: $light-border;
+        display: block;
+
+        &:last-child {
+            border-bottom: $light-border;
+        }
+    }
+
+    &-article {
+        position: relative;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        &:hover {
+            .dot-ident {
+                background-color: #FFAB34;
+            }
+
+            .img-placeholder::after {
+                opacity: 0.2;
+            }
+
+            .details-wheel {
+                opacity: 1;
+            }
+        }
+
+
+        .dot-ident {
+            @include transition(all, 0.5);
+            width: 1.8rem;
+            height: 1.8rem;
+            border-radius: 50%;
+            background-color: $gray-3;
+            filter: blur(2px);
+            margin-right: 1.5rem;
+            transform: translateY(3px);
+        }
+
+        .img-placeholder {
+            position: relative;
+            height: 20rem;
+
+            @include resolution(1600px) {
+                height: 25rem;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: 0px 2px 40px rgba(61, 0, 254, 0.4);
+            }
+
+            &:after {
+                @include transition(all, 0.5);
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: linear-gradient(180deg, #3D00FE 0%, #6846FF 76.56%);
+                mix-blend-mode: multiply;
+                opacity: 0.6;
+            }
+        }
+
+        .details-wheel {
+            @include transition(all, 0.5);
+            opacity: 0;
+            position: absolute;
+            right: -3rem;
+            top: 0;
+            animation: rotating 8s linear infinite;
+            transform-origin: center;
+
+            &.lefted {
+                left: -3rem;
+                right: 0;
+            }
+        }
+    }
+
+    &-title {
+        margin-top: 7rem;
+    }
+}
+
+
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

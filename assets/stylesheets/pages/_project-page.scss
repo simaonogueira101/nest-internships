@@ -1,7 +1,18 @@
 .project-page {
     &-header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: $navbar-height-sm;
+        height:calc(100vh - 10rem);
+
+        @include tablet {
+            margin-top: $navbar-height;
+            height: calc(100vh - 18rem);
+        }
+
         .project-info {
-            margin-top: 8rem;
+            margin-top: 30vh;
 
             .project-year {
                 letter-spacing: 0.12em;
@@ -18,8 +29,8 @@
 
 .project-preset {
     &-wrapper {
-        margin-top: -10rem;
-        
+        margin-top: -20vh;
+
         .project-image-wrapper {
             img {
                 width: 100%;
