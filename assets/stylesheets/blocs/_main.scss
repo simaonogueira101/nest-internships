@@ -49,6 +49,10 @@ svg {
         z-index: -1;
         top: 5%;
 
+        @include resolution (1600px) {
+            top: 10%;
+        }
+
         text {
             fill: none;
             stroke: $gray-3;
@@ -68,7 +72,7 @@ svg {
             }
         }
 
-        &.indago {
+        &.indago, &.aurora {
             text {
                 transform: translateX(-42%);
             }
