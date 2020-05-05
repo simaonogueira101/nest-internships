@@ -6,6 +6,7 @@ header {
     padding-top: 5rem;
     width: 100%;
     height: $navbar-height-sm;
+    z-index: 10;
 
     @include tablet {
         padding-top: 9rem;
