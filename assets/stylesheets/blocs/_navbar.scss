@@ -6,6 +6,7 @@ header {
     padding-top: 5rem;
     width: 100%;
     height: $navbar-height-sm;
+    z-index: 10;
 
     @include tablet {
         padding-top: 9rem;
@@ -27,11 +28,42 @@ header {
 
     &.header-navigation {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            @extend .img-center;
+            width: 60%;
+
+            @include tablet {
+                width: 34rem;
+            }
+        }
+
 
         .btn-link {
+            display: none;
             z-index: 1;
+
+            @include tablet {
+                display: block;
+            }
+        }
+
+        .back-link {
+            position: absolute;
+
+            @include tablet {
+                position: relative;
+            }
+
+            span {
+                display: none;
+
+                @include tablet {
+                    display: block;
+                }
+            }
         }
     }
 }
