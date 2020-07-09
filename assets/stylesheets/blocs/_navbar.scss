@@ -14,11 +14,13 @@ header {
     }
 
     .logo-link {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         display: block;
     }
 
     .logo {
-        @extend .img-center;
         width: 80%;
 
         @include tablet {
@@ -29,16 +31,15 @@ header {
     &.header-navigation {
         display: flex;
         align-items: center;
-        justify-content: space-between;
 
         .logo {
-            @extend .img-center;
             width: 60%;
 
             @include tablet {
                 width: 34rem;
             }
         }
+
 
 
         .btn-link {

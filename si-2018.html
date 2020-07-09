@@ -39,14 +39,13 @@
     <body>
       <img src="assets/images/sun.png" class="fixed-sun">
       <header class="header-navigation">
-        <a href="si/-2019" class="back-link">
+        <a href="/index" class="back-link" onclick="goBack()">
           <img src="assets/images/slim-arrow.svg">
           <span>Back</span>
         </a>
-        <a href="/index">
+        <a href="/index" class="logo-link">
           <img class="logo" src="assets/images/logo.svg">
         </a>
-        <a href="/apply" class="btn-link">Apply now</a>
       </header>
 
       <main>
@@ -205,37 +204,6 @@
             </div>
         </section>
 
-        <div class="infinite-slider">
-          <div class="slide-track">
-            <a href="/apply">
-              <div class="slide">
-                <h5><span class="dot"></span>Apply to our awesome internship</h5>
-              </div>
-              <div class="slide">
-                <h5><span class="dot"></span>Apply to our awesome internship</h5>
-              </div>
-              <div class="slide">
-                <h5><span class="dot"></span>Apply to our awesome internship</h5>
-              </div>
-              <div class="slide">
-                <h5><span class="dot"></span>Apply to our awesome internship</h5>
-              </div>
-              <div class="slide">
-                <h5><span class="dot"></span>Apply to our awesome internship</h5>
-              </div>
-              <div class="slide">
-                <h5><span class="dot"></span>Apply to our awesome internship</h5>
-              </div>
-              <div class="slide">
-                <h5><span class="dot"></span>Apply to our awesome internship</h5>
-              </div>
-              <div class="slide">
-                <h5><span class="dot"></span>Apply to our awesome internship</h5>
-              </div>
-            </a>
-          </div>
-        </div>
-
         <div class="next-project-bar">
             <a href="/si-2017" class="next-project-link">
                 <h2 class="next-project-title t-center">Are you still not impressed?</h2>
@@ -289,6 +257,11 @@
             </a>
         </div>
       </footer>
+      <script>
+      function goBack() {
+        window.history.back();
+      }
+      </script>
       
   </body>
 </html>

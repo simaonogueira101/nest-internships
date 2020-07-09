@@ -38,14 +38,13 @@
     <body>
       <img src="assets/images/sun.png" class="fixed-sun">
       <header class="header-navigation">
-        <a href="/index" class="back-link">
+        <a href="/index" class="back-link" onclick="goBack()">
           <img src="assets/images/slim-arrow.svg">
           <span>Back</span>
         </a>
-        <a href="/index">
+        <a href="/index" class="logo-link">
           <img class="logo" src="assets/images/logo.svg">
         </a>
-        <a href="/apply" class="btn-link">Apply now</a>
       </header>
 
       <main>
@@ -185,6 +184,12 @@ hard copies).</p>
             </a>
         </div>
       </footer>
+
+      <script>
+      function goBack() {
+        window.history.back();
+      }
+      </script>
       
   </body>
 </html>
