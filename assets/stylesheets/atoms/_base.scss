@@ -5,7 +5,8 @@ HTML elements look n feel
 */
 
 body {
-  background-color: $dark-purple;
+  background-color: $secondary;
+  background: linear-gradient(180deg, rgba(0,254,163,1) 0%, rgba(70,200,255,1) 100%);
   color: $gray-3;
   font-family: $font-family-sans-serif-reg;
   font-size: $font-size-baseline;

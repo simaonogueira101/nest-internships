@@ -144,7 +144,7 @@
 
     .next-project-title {
         @include transition(all, 0.5);
-        color: $purple;
+        color: $secondary;
         font-size: 2rem;
         padding: 2rem 0;
         text-transform: uppercase;
