@@ -45,7 +45,7 @@ footer {
                 a {
                     &:hover .dot {
                         @include transition(all, 0.3);
-                        background-color: #FFAB34;
+                        background-color: $accent;
                     }
                 }
             }
