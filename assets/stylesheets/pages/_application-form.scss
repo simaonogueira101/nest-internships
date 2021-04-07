@@ -1,7 +1,7 @@
 .form-wrapper {
     margin-top: $navbar-height-sm;
     height: 100%;
-    padding-top: 0;
+    padding-top: 4rem;
 
     @include tablet {
         margin-top: $navbar-height;
